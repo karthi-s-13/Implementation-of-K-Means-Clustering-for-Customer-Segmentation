@@ -49,6 +49,9 @@ plt.title("Elbow Method")
 km = KMeans(n_clusters=5)
 km.fit(df.iloc[:, 3:])
 y_pred = km.predict(data.iloc[:, 3:])
+y_pred
+```
+```
 df["cluster"] = y_pred
 ```
 ```
@@ -78,6 +81,9 @@ plt.title("Customer Segment")
 
 ### Elbow Graph
 ![Screenshot 2025-05-15 092442](https://github.com/user-attachments/assets/681810c6-a7e9-4d6a-ae26-b9a5f397890a)
+
+### Predicted Value
+![Screenshot 2025-05-15 093310](https://github.com/user-attachments/assets/b78a7566-14c3-4864-8273-2fa6ccb3b234)
 
 ### Customer Segement Plot
 ![Screenshot 2025-05-15 092453](https://github.com/user-attachments/assets/e8ec7fe9-6398-4432-a4b1-274d9f839a85)
